@@ -42,12 +42,14 @@ section {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
+  /*background-color: blue;*/
 }
 
 .img {
   height: 150px;
   background-color: red;
   background-size: cover;
+  background-position: center;
 }
 
 .flow01 {
@@ -72,17 +74,18 @@ footer {
   background-color: #aaaaaa;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   header {
     width: 100%;
   }
 
   main {
+    margin-top: 30px;
     width: 100%;
   }
 
   section {
-    display: block;
+    display: grid;
   }
 
   .wrapper {
@@ -90,6 +93,10 @@ footer {
     margin-top: 20px;
     width: 90%;
   }
+
+.img{
+  background-position: bottom;
+}
 
   footer {
     width: 100%;
